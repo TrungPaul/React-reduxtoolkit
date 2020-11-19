@@ -1,4 +1,4 @@
-import countReducer from '../features/counter/photoSlice';
+import countReducer from '../features/counter/countSlice';
 import { configureStore } from "@reduxjs/toolkit";
 
 const rootReducer = {
