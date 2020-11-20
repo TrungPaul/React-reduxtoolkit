@@ -1,11 +1,11 @@
 import './App.css';
-import React, { Suspense, useState } from 'react';
-import { HashRouter, BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import React, { Suspense } from 'react';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import Counter from './features/counter';
 import { NotFound } from './component/notFound';
+import { withTranslation } from 'react-i18next';
 
-function App() {
-
+function App(props) {
   return (
     <div className="App">
       <Suspense fallback={<div>Loading ...</div>}>
@@ -21,4 +21,4 @@ function App() {
   );
 } 
 
-export default App;
+export default withTranslation()(App);

@@ -4,7 +4,6 @@ import { Counter } from './pages/counter';
 
 function Count(props) {
   const match = useRouteMatch();
-  console.log({ match });
 
   return (
     <>
